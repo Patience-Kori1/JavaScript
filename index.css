@@ -1,0 +1,134 @@
+/************************* Début de mon Carrousel ****************************************/
+/* body {
+    background-color: rgb(136, 133, 130);
+}
+.maBoite {
+    width: 900px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: burlywood;
+    border-radius: 20px;
+    margin: 60px auto auto auto;
+    border: 5px solid white;
+}
+.monCarrousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+    margin-top: 50px;
+    gap:50px
+}
+
+.monImage {
+    border-radius: 20px;
+    cursor: pointer;
+    border: 3px solid white;
+    width: 600px;
+    height: 320px;
+}
+.mesBoutons {
+    width: 400px;
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    gap: 100px;
+}
+.monBouton1 {
+    width: 100px;
+    height: 150px;
+    border-radius:100% 0% 0% 100% / 42% 47% 53% 58%; 
+    cursor: pointer;
+    background-color: sandybrown;
+    border: 3px solid white;
+}
+
+.monBouton2 {
+    width: 100px;
+    height: 150px;
+    border-radius:0% 100% 100% 0% / 0% 47% 53% 100% ; 
+    cursor: pointer;
+    background-color: sandybrown;
+    border: 3px solid white;
+} */
+
+/********************************* Début de mon Horloge ***********************************/
+body {
+    background-color: rgb(136, 133, 130);
+}
+.maBoite {
+    width: 900px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: burlywood;
+    border-radius: 20px;
+    margin: 60px auto auto auto;
+    border: 5px solid white;
+}
+.monCarrousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+    margin-top: 50px;
+    gap:50px
+}
+.monH1 {
+    font-family: Arial, sans-serif;
+    color:white;
+}
+.monImage {
+    border-radius: 20px;
+    cursor: pointer;
+    border: 5px solid white;
+    width: 600px;
+    height: 320px;
+}
+.mesBoutons {
+    width: 400px;
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    gap: 200px;
+}
+.monBouton1 {
+    width: 100px;
+    height: 150px;
+    border-radius:100% 0% 0% 100% / 42% 47% 53% 58%; 
+    cursor: pointer;
+    background-color: sandybrown;
+    border: 2px solid white;
+}
+
+.monBouton2 {
+    width: 100px;
+    height: 150px;
+    border-radius:0% 100% 100% 0% / 0% 47% 53% 100% ; 
+    cursor: pointer;
+    background-color: sandybrown;
+    border: 2px solid white;
+}
+
+.affichageHeureHTML {
+    width: 200px;
+    height: 75px;
+    border: 2px solid white;
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    left: 1px;
+    text-align:end;
+    font-size: 30px;
+    padding-top:70px;
+    padding-right: 100px;
+    background-color: rgb(241, 197, 109);
+    border-radius: 49% 51% 50% 50% / 100% 100% 0% 0%;
+}

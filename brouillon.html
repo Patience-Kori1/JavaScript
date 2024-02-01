@@ -1,0 +1,157 @@
+// document.getElementById('nom').value;
+// console.log(document.getElementById('nom').value)
+// console.log(document.getElementById('prenom').value)
+// console.log(document.getElementById("form"))
+// let nom = document.getElementById('nom').value;
+// let prenom = document.getElementById('prenom').value;
+// let tableaux = [
+//     { "Nom": nom, "Prenom": prenom },
+// ]
+// console.log(JSON.stringify(tableaux))
+
+// Start of the calculator exercise
+
+function calculer() {
+    // Récupérer les valeurs saisies par l'utilisateur
+    let premierNombre = document.getElementById('premier-nombre').value;
+    let deuxiemeNombre = document.getElementById('deuxieme-nombre').value;
+
+    // Convertir les chaînes de caractères en nombres
+    premierNombre = parseFloat(premierNombre);
+    deuxiemeNombre = parseFloat(deuxiemeNombre);
+
+    // Vérifier si les valeurs sont des nombres valides
+    if (isNaN(premierNombre) || isNaN(deuxiemeNombre)) {
+        alert("Veuillez saisir des nombres valides.");
+        return;
+    }
+
+    // Effectuer l'opération d'addition
+    let resultat = premierNombre + deuxiemeNombre;
+
+    // Afficher le résultat dans le champ resultat
+    document.getElementById("resultate").value = resultat;
+}
+// Début exercice Afficher/Cahcher
+
+let cacher = document.getElementById("second");
+cacher.classList.remove("hidden");  // Il faut noter que le remove c'est pour enlever le display none de css
+
+// Début exercice Cacher les spoilers
+
+document.getElementById("myButton").onclick = function cacherAfficher() {
+  
+    let cacherSpoilers = document.getElementsByClassName("spoiler");
+    for (let i = 0; i < cacherSpoilers.length; i++) {
+    cacherSpoilers[i].classList.add("hidden");
+    }
+    console.log(cacherSpoilers[0]);
+    }
+
+
+
+
+
+       <!-- <form action="" id="form">
+    <label for="nom">Nom :</label>
+    <input id="nom" value="Koribirama">
+    <label for="prenom">Prenom :</label>
+    <input id="prenom" value="Patience">
+   </form>  -->
+
+   <!-- Début exercice calculatrice -->
+   <h3>Début exercice calculatrice</h3>
+   <form>
+        <label for="premier-nombre">Premier Nombre :</label>
+        <input type="text" id="premier-nombre" name="premier-nombre">
+
+        <label for="deuxieme-nombre">Deuxième Nombre :</label>
+        <input type="text" id="deuxieme-nombre" name="deuxieme-nombre">
+
+        <label for="resultat">Résultat :</label>
+        <input type="text" id="resultat" readonly>
+
+        <input type="button" value="Calculer" onclick="calculer()">
+    </form>
+    
+<!-- Début exercice afficher/cacher -->
+<h3>Début exercice Afficher/Cacher</h3>
+<p id="premier">texte visible</p>
+<p id="second" class="hidden">ce texte devrait être caché</p> 
+<!-- Début exercice Cacher les spoilers -->
+<h3>Début exercice Cacher les spoiler</h3>
+<p>C'est l'histoire d'un garçon troublé</p>
+<p class="spoiler">car il s'avère que son ours en peluche a disparu</p>
+<p class="spoiler">mais finalement il le retrouve</p>
+<button id="myButton">
+    Cliquer ici
+</button>
+
+<!-- <div id="toto">
+    <h2 class="Text">Alors Javascript </h2>
+    <p class="changeText">c’est dur ou pas ?</p> 
+  </div>
+  
+  <p>Cliquez sur le bouton et vous aurez votre réponse .</p>
+  
+  <button onclick="myFunction()">Reponse ici</button>
+   -->
+   <!-- <div id="zoneProposition">
+    Entrez le mot : <span>Cachalot</span>
+</div> -->
+
+<!-- Début 2 -->
+<!-- <div class="zoneChoix">
+  <input type="radio" name="optionSource" id="mots" value="1" 	   checked>
+  <label for="mots">Mots</label>
+  <input type="radio" name="optionSource" id="phrases"     	   value="2">
+  <label for="phrases">Phrases</label>
+</div>
+<div class="zoneProposition">
+  Entrez le mot : <span>Cachalot</span>
+</div> -->
+<!-- Fin 2 -->
+<!-- Début 3 -->
+<!-- <img id="premiereImage" src="image.jpg" alt="Ceci est une image de test" class="photo flexCenter">
+<h2 class="comment">Comment vas-tu</h2> -->
+<!-- Fin 3 -->
+<!-- Début exercice  Changer la couleur du parent au clic -->
+<!-- <div style="padding: 10px;">
+  <button>Mon 1er Bouton</button>
+</div>
+<div style="padding: 10px;">
+  <button>Mon 2ème Bouton</button>
+</div>
+<div style="padding: 10px;">
+  <button>Mon 3ème Bouton</button>
+</div> -->
+<!-- Fin 3 -->
+<!-- <form id="some_exchnage_request_form">
+  <input type="submit">
+</form> -->
+
+<button id="monBouton">Cliquez-moi !</button>
+<!-- <button>Mon 1er Bouton</button>
+<button>Mon 2ème Bouton</button>
+<button>Mon 3ème Bouton</button> -->
+
+<table>
+  <img src="" alt="">
+  <button></button>
+  <tr>
+    <td>
+      <a href="https://animal.in.ua/wp-content/uploads/pp1456_3755.jpg" alt="image lapin">Mon premier image</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://th.bing.com/th/id/R.c697a9d3c55cf931b748e501446402bc?rik=2pAr7wPExPrIIw&riu=http%3a%2f%2fpic.uchis.com%2fuploadfile%2f201205b%2f20120513120913738.jpg&ehk=Q4bpcAhPBneGF6NVkV9WSSVzTI61oArIFG9VIEnCEYI%3d&risl=&pid=ImgRaw&r=0" alt="image oiseaux">Mon deuxième image</a>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://annebianchi.com/media/image/cat-boy-italy.jpeg" alt="image chat">Mon troisième image</a>
+    </td>
+  </tr>
+
+</table>
